@@ -3,9 +3,9 @@
 	Starting file for Assignment 1 
 	{Yashvi Brijmohan Raja}
 */
-// 'use strict';
+'use strict';
 
-// $(document).ready(function() {
+$(document).ready(function() {
 
 	let input = document.querySelector('fieldset');
 	input.addEventListener('keyup',calculateSalary);
@@ -19,4 +19,4 @@
 
 		document.querySelector('#spend').textContent = "$" + spend.toFixed(2);
 	}
-// });
+});
