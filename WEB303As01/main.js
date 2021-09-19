@@ -15,8 +15,8 @@ $(document).ready(function() {
 
 		let percent = document.querySelector("#percent").value;
 
-		let gadgets = salary * percent / 100 ;
+		let spend = salary * percent / 100 ;
 
-		document.querySelector('#spend').textContent = "$" + gadgets.toFixed(2);
+		document.querySelector('#spend').textContent = "$" + spend.toFixed(2);
 	}
 });
