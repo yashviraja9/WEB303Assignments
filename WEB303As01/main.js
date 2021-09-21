@@ -7,16 +7,11 @@
 
 $(document).ready(function() {
 
-	let input = document.querySelector('fieldset');
-	input.addEventListener('keyup',calculateSalary);
-
-	function calculateSalary(event) {
-		let salary = document.querySelector("#salary").value;
-
-		let percent = document.querySelector("#percent").value;
-
-		let spend = salary * percent / 100 ;
-
-		document.querySelector('#spend').textContent = "$" + spend.toFixed(2);
-	}
+	$("input").keyup(function () {
+		let $salary = parseInt($("input#salary").val());
+		let $percent = parseInt($("input#percent").val());
+		let spend = ($salary*$percent/100);
+		$("span#spend").text(`$  ${spend.toFixed(2)}`);
+		}
+	);
 });
