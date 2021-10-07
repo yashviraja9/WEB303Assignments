@@ -1,16 +1,38 @@
 /*
     Assignment 4
-    {Your name here}
+    {Yashvi Brijmohan Raja}
 */
 
 $(document).ready(function(){
     // your code here
 
-
-
-
-
-
+    navigator.geolocation.getCurrentPosition(
+        function success(position) 
+        {
+            var let1 = position.coords.latitude;
+            var lon1 = position.coords.longitude;
+            $('#youarehere').append(`Current Location is : ${let1}, ${lon1} </br>`);
+               
+               
+            if (localStorage.getItem("letitude1") !== null && localStorage.getItem("longitude1") !== null) 
+            {
+                var let2 = localStorage.getItem("letitude1");
+                var lon2 = localStorage.getItem("longitude1");
+                var distance = calcDistance(let1,lon1,let2,lon2);
+                $('#youarehere').append(`How far you have moved :  ${distance} </br>`);
+                
+            } else {
+                 //local storage is not available;
+                $('#youarehere').append("Welcome you are visiting for first time, local storage is not available </br>");
+            }  
+            localStorage.setItem("letitude1",let1);
+            localStorage.setItem("longitude1",lon1);
+        },
+        function failed() {
+            $('#youarehere').append("Can not use geolocation, permission denied..! </br>");
+        }
+    );
+        
     // function to calculate the distance in metres between two lat/long pairs on Earth
     // Haversine formula - https://en.wikipedia.org/wiki/Haversine_formula
     // Aren't those cool variable names? Yah gotta love JavaScript
