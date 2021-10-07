@@ -23,13 +23,13 @@ $(document).ready(function(){
                 
             } else {
                  //local storage is not available;
-                $('#youarehere').append("Welcome you are visiting for first time, local storage is not available </br>");
+                $('#youarehere').html("<h3>Welcome you are visiting for first time..!</h3></br>");
             }  
             localStorage.setItem("letitude1",let1);
             localStorage.setItem("longitude1",lon1);
         },
         function failed() {
-            $('#youarehere').append("Can not use geolocation, permission denied..! </br>");
+            $('#youarehere').html("Can not use geolocation, permission denied..! </br>");
         }
     );
         
