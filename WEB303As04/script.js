@@ -20,10 +20,8 @@ $(document).ready(function(){
                 var lon2 = localStorage.getItem("longitude1");
                 var distance = calcDistance(let1,lon1,let2,lon2);
                 $('#youarehere').append(`How far you have moved :  ${distance} </br>`);
-                console.log('Local storage available..!');
             } else {
                  //local storage is not available;
-                 console.log('Local storage not available.');
                 $('#youarehere').html("<h3>Welcome you are visiting for first time..!</h3></br>");
             }  
             localStorage.setItem("letitude1",let1);
