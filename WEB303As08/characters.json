@@ -1,0 +1,69 @@
+{
+"characters" : [
+    {
+        "name":"Ace Ventura",
+        "year":"1994",
+        "gender":"Male",
+        "movie":"Ace Ventura"
+    },
+    {
+        "name":"Ada McGrath",
+        "year":"1993",
+        "gender":"Female",
+        "movie":"The Piano"
+    },
+    {
+        "name":"Yoda",
+        "year":"1980",
+        "gender":"Male",
+        "movie":"The Empire Strikes Back"
+    },
+    {
+        "name":"Anton Chigurh",
+        "year":"2007",
+        "gender":"Male",
+        "movie":"No Country For Old Men"
+    },
+    {
+        "name":"Tyler Durden",
+        "year":"1999",
+        "gender":"Male",
+        "movie":"Fight Club"
+    },
+    {
+        "name":"Atticus Finch",
+        "year":"1962",
+        "gender":"Male",
+        "movie":"To Kill a Mockingbird"
+    },
+    {
+        "name":"Rocky Balboa",
+        "year":"1976",
+        "gender":"Male",
+        "movie":"Rocky"
+    },
+    {
+        "name":"Daniel Plainview",
+        "year":"2007",
+        "gender":"Male",
+        "movie":"There Will Be Blood"
+    },
+    {
+        "name":"Claudia Sulewski",
+        "year":"1994",
+        "gender":"Female",
+        "movie":"Interview with the Vampire"
+    },
+    {
+        "name":"Ethan Hunt",
+        "year":"1996",
+        "gender":"Male",
+        "movie":"Mission Impossible"
+    },
+    {
+        "name":"White Goodman",
+        "year":"2004",
+        "gender":"Male",
+        "movie":"DodgeBall"
+    }
+]}
