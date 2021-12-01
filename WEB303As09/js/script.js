@@ -62,8 +62,6 @@ $.ajax({
                 return a - b;
             }
         }
-
-
             var $table = $('.sortable'); 
             var $tbody = $table.find('tbody'); 
             var $controls = $table.find('th'); 
@@ -76,7 +74,7 @@ $.ajax({
                 var order = $header.data('sort'); 
                 var column; 
 
-                if ($header.is('.ascending') || $header.is('.descending') ||                $header.is('.original'))
+                if ($header.is('.ascending') || $header.is('.descending') || $header.is('.original'))
                 {               
                     if ($header.is('.ascending')) {
                         $header.removeClass('ascending');
