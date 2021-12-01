@@ -1,0 +1,68 @@
+body {
+    max-width: 960px ;
+    margin: 0 auto;
+}
+
+h1 {
+    color: crimson;
+}
+
+input {
+    width: 40%;
+    height: 30px;
+    margin: 10px 0px;
+    font-size: 15px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#firstButton , #secondButton  {
+    margin-top: 20px;
+    width: 20%;
+    height: 40px;
+    background-color: cadetblue;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+button.hover, button.active {
+	background-color: blanchedalmond;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*Table style*/
+
+th.ascending:after {
+    content: '\25B2';
+    float: right;
+}
+
+th.descending:after {
+    content: '\25BC';
+    float: right;
+}
+
+th.ascending, th.descending, table.sortable th:hover {
+	background-color: cadetblue;
+    cursor: pointer;
+}
