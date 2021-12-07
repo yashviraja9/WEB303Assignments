@@ -1,0 +1,64 @@
+input .disabled{
+    background-color: #999;
+}
+
+body {
+  background-color: #90908c;
+  margin: 0;}
+
+form {
+  font-family: trocchi, georgia, times, serif;
+}
+
+.two-thirds {
+  background-color: darksalmon;
+  border: 12px solid #fff;
+  position: relative;
+  left: 300px;
+  margin: 10px;
+  color: #fff;
+  overflow: hidden;}
+
+.two-thirds {width: 550px;}
+.two-thirds fieldset {border: none; margin: 2.5em;}
+
+.container .two-thirds {height: 35em;}
+.login .two-thirds { height: 20em;}
+
+#message {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  border-color: black; 
+  text-align: center;
+  padding: 10px;
+  background-color: dimgray;
+  display: none;
+  width: 100%;
+}
+
+/* FORM STYLES */
+legend {
+  font-size: 160%;
+  position: relative;
+  color: #fff;}
+.two-thirds legend { top: -1em; left: -1em;}
+
+label {width: 100%; font-size: 17px;}
+label[for="pwd"], 
+label[for="cpwd"], 
+label[for="checkbox"],
+label[for="country"], {display: inline; }
+
+input , select{
+  border: none;
+  padding: 8px;
+  line-height: 1.2em; 
+  margin-bottom: 1.4em;
+  margin-top: 0.3em;
+  font-size: 1.2em;}
+
+input[type="text"], input[type="email"], input[type="password"], #country {width: 100%;}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+  box-shadow: inset 0 2px 2px #000;
+  outline: 0;}
